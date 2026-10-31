@@ -1,0 +1,92 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #fbd8f7;
+    /* Matching navbar bg for consistency or a light variant */
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-card h2 {
+    color: #2c2c6c;
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #30102a;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-group input:focus {
+    border-color: #efa6dc;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #382f38;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-btn:hover {
+    background-color: #efa6dc;
+    color: #30102a;
+}
+
+.login-footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-footer a {
+    color: #7c3aed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}

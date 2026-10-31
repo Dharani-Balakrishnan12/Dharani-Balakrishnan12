@@ -1,0 +1,236 @@
+.service-section {
+    padding: 80px 5%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fdfcfb 0%, #f4eee8 100%);
+    min-height: 100vh;
+}
+
+.service-header {
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInDown 1s ease-out;
+}
+
+.service-header h1 {
+    font-size: 52px;
+    color: #2c2c6c;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.service-header p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.service-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: #fca311;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(44, 44, 108, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.service-card:hover::after {
+    transform: translateY(0);
+}
+
+.service-card h3 {
+    font-size: 26px;
+    color: #2c2c6c;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.cta-section {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.service-btn {
+    background-color: #2c2c6c;
+    color: #ffffff;
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(44, 44, 108, 0.2);
+}
+
+.service-btn:hover {
+    background-color: #fca311;
+    color: #2c2c6c;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(252, 163, 17, 0.3);
+}
+
+/* Team Section */
+.team-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 42px;
+    color: #2c2c6c;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #fdfcfb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h4 {
+    color: #2c2c6c;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.team-member p {
+    color: #fca311;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Testimonials Section */
+.testimonial-section {
+    margin-top: 100px;
+    text-align: center;
+    padding: 60px 5%;
+    background: #2c2c6c;
+    border-radius: 30px;
+    color: white;
+}
+
+.testimonial-section h2 {
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 35px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.testimonial-card p {
+    color: #e6e0f8;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-author h5 {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.testimonial-author span {
+    color: #fca311;
+    font-size: 14px;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .service-header h1 { font-size: 38px; }
+    .team-section h2 { font-size: 34px; }
+    .testimonial-section h2 { font-size: 34px; }
+    .service-section { padding: 60px 5%; }
+}

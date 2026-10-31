@@ -1,0 +1,278 @@
+/* Header */
+.navbar {
+  background-color: #fbd8f7;
+  padding: 0px 0px;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+/* Layout */
+.navbar-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* Logo */
+.nav-logo {
+  display: flex;
+}
+
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 12px;
+}
+
+.nav-logo img {
+  width: 44px;
+  height: 44px;
+  border-radius: 80%;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4a3c70;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-size: 14.5px;
+  color: #30102a;
+  padding: 6px 8px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+}
+
+/* Active menu (pill) */
+.navbar-links a.active {
+  background-color: #f5e6f2;
+  color: #7c3aed;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* Hover */
+.navbar-links a:hover {
+  background-color: #efa6dc;
+}
+
+/* CTA Button */
+.btn-primary {
+  background-color: #382f38;
+  color: #ffffff !important;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #f7cee8;
+}
+
+.cart-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-count {
+  background-color: #f2afd8;
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 22px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #ffffff !important;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.btn-danger:hover {
+  background-color: #f7cee8;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #7c3aed;
+  color: #ffffff !important;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14.5px;
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #5b21b6;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropbtn {
+  font-size: 14.5px;
+  color: #30102a;
+  padding: 6px 8px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fbd8f7;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 10px;
+  padding: 5px 0;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: #30102a;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: #efa6dc;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #efa6dc;
+}
+
+/* Custom Language Dropdown */
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 2px;
+}
+
+.language-dropbtn {
+  font-size: 14.5px;
+  color: #30102a;
+  padding: 6px 8px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-color: #fbd8f7;
+  /* Matching navbar bg for consistency, or can use white/another color */
+  border: 1px solid #eba6dc;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.language-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  border-radius: 8px;
+  padding: 8px 0;
+  top: 100%;
+  right: 0;
+  /* Align right to avoid overflowing the page */
+  margin-top: 5px;
+}
+
+.language-dropdown-content button {
+  color: #30102a;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+.language-dropdown-content button:hover {
+  background-color: #f5e6f2;
+}
+
+.language-dropdown:hover .language-dropdown-content {
+  display: block;
+}
+
+.language-dropdown:hover .language-dropbtn {
+  background-color: #efa6dc;
+}
+
+/* Hide Google Translate banner completely */
+body {
+  top: 0 !important;
+}
+
+.skiptranslate iframe,
+.skiptranslate {
+  display: none !important;
+}
